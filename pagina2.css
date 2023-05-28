@@ -1,0 +1,444 @@
+*{
+
+   box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+body {
+    margin: 0;
+    background: #020202;
+    cursor: crosshair;
+  }
+  /* medida para telefono */
+@media ( max-width:390px) {
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+ background:url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/noisy_net.png') repeat;
+  font-family: "Open Sans",  Impact;
+}
+.hola{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  text-align:center;
+  font-size:6.5em;
+  color:#fff;
+  letter-spacing: -7px;
+  font-weight:700;
+  text-transform:uppercase;
+  animation:blur 3.75s ease-out infinite;
+  text-shadow:0px 0px 5px pink,
+      0px 0px 7px red;
+}
+
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px red,
+      0px 0px 10px red, 
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 50px red,
+      0px 0px 50px red,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;}
+}
+.area{
+  position: absolute;
+  top: 74%;
+  left: 21%;
+  text-align:center;
+  font-size:6.5em;
+  color:#fff;
+  letter-spacing: -7px;
+  font-weight:700;
+  text-transform:uppercase;
+  animation:blur 3.75s ease-out infinite;
+  text-shadow:0px 0px 5px pink,
+      0px 0px 7px red;
+}
+
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px red,
+      0px 0px 10px red, 
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 50px red,
+      0px 0px 50px red,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;}
+}
+.posicionar{
+  display: flex;
+  justify-content: center;
+}
+  .feliz{
+    display: flex;
+    text-align: center;
+  }
+  canvas{display:block}
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px 20px 22px;
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #e8e8e8;
+    border-color: #ffe2e2;
+    border-style: solid;
+    border-width: 9px;
+    border-radius: 35px;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(134, 124, 124);
+    font-family: monospace;
+    transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), 
+    border-color 400ms ease-in-out,
+    background-color 400ms ease-in-out;
+    word-spacing: -2px;
+  }
+  
+  @keyframes movingBorders {
+    0% {
+      border-color: #fce4e4;
+    }
+  
+    50% {
+      border-color: #ffd8d8;
+    }
+  
+    90% {
+      border-color: #fce4e4;
+    }
+  }
+  
+  button:hover {
+    background-color: #eee;
+    transform: scale(105%);
+    animation: movingBorders 3s infinite;
+  }
+  
+  button svg {
+    fill: rgb(255, 110, 110);
+    margin-right: 13px;
+  }
+  
+  @keyframes beatingHeart {
+    0% {
+      transform: scale(1);
+    }
+  
+    15% {
+      transform: scale(1.15);
+    }
+  
+    30% {
+      transform: scale(1);
+    }
+  
+    45% {
+      transform: scale(1.15);
+    }
+  
+    60% {
+      transform: scale(1);
+    }
+  }
+  
+  button:hover svg {
+    animation: beatingHeart 1.2s infinite;
+  }
+  .posicionar{
+    position: absolute;
+    top: 43%;
+    left: 43%;
+  }
+}
+  canvas{display:block}
+  h1 {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F4F5F7;
+    font-family: "Impact,Charcoal,sans-serif";
+    font-size: 5em;
+    font-weight: 800;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  h2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F4F6F7;
+    font-family: "Impact,Charcoal,sans-serif";
+    font-size: 5em;
+    font-weight: 800;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px 20px 22px;
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #e8e8e8;
+    border-color: #ffe2e2;
+    border-style: solid;
+    border-width: 9px;
+    border-radius: 35px;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(134, 124, 124);
+    font-family: monospace;
+    transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), 
+    border-color 400ms ease-in-out,
+    background-color 400ms ease-in-out;
+    word-spacing: -2px;
+  }
+  
+  @keyframes movingBorders {
+    0% {
+      border-color: #fce4e4;
+    }
+  
+    50% {
+      border-color: #ffd8d8;
+    }
+  
+    90% {
+      border-color: #fce4e4;
+    }
+  }
+  
+  button:hover {
+    background-color: #eee;
+    transform: scale(105%);
+    animation: movingBorders 3s infinite;
+  }
+  
+  button svg {
+    fill: rgb(255, 110, 110);
+    margin-right: 13px;
+  }
+  
+  @keyframes beatingHeart {
+    0% {
+      transform: scale(1);
+    }
+  
+    15% {
+      transform: scale(1.15);
+    }
+  
+    30% {
+      transform: scale(1);
+    }
+  
+    45% {
+      transform: scale(1.15);
+    }
+  
+    60% {
+      transform: scale(1);
+    }
+  }
+  
+  button:hover svg {
+    animation: beatingHeart 1.2s infinite;
+  }
+  .posicionar{
+    position: absolute;
+    top: 43%;
+    left: 43%;
+  }
+/* pc */
+  /* Estilos específicos para pantallas más grandes */
+  @media screen and (min-width: 1024px) {
+  canvas{display:block}
+ 
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px 20px 22px;
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #e8e8e8;
+    border-color: #ffe2e2;
+    border-style: solid;
+    border-width: 9px;
+    border-radius: 35px;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(134, 124, 124);
+    font-family: monospace;
+    transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), 
+    border-color 400ms ease-in-out,
+    background-color 400ms ease-in-out;
+    word-spacing: -2px;
+  }
+  
+  @keyframes movingBorders {
+    0% {
+      border-color: #fce4e4;
+    }
+  
+    50% {
+      border-color: #ffd8d8;
+    }
+  
+    90% {
+      border-color: #fce4e4;
+    }
+  }
+  
+  button:hover {
+    background-color: #eee;
+    transform: scale(105%);
+    animation: movingBorders 3s infinite;
+  }
+  
+  button svg {
+    fill: rgb(255, 110, 110);
+    margin-right: 13px;
+  }
+  
+  @keyframes beatingHeart {
+    0% {
+      transform: scale(1);
+    }
+  
+    15% {
+      transform: scale(1.15);
+    }
+  
+    30% {
+      transform: scale(1);
+    }
+  
+    45% {
+      transform: scale(1.15);
+    }
+  
+    60% {
+      transform: scale(1);
+    }
+  }
+  
+  button:hover svg {
+    animation: beatingHeart 1.2s infinite;
+  }
+  .posicionar{
+    position: absolute;
+    top: 43%;
+    left: 43%;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+ background:url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/noisy_net.png') repeat;
+  font-family: "Open Sans",  Impact;
+}
+.hola{
+  position: absolute;
+  top: 0%;
+  left: 36%;
+  text-align:center;
+  font-size:6.5em;
+  color:#fff;
+  letter-spacing: -7px;
+  font-weight:700;
+  text-transform:uppercase;
+  animation:blur 3.75s ease-out infinite;
+  text-shadow:0px 0px 5px pink,
+      0px 0px 7px red;
+}
+
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px red,
+      0px 0px 10px red, 
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 50px red,
+      0px 0px 50px red,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;}
+}
+.area{
+  position: absolute;
+  top: 74%;
+  left: 43%;
+  text-align:center;
+  font-size:6.5em;
+  color:#fff;
+  letter-spacing: -7px;
+  font-weight:700;
+  text-transform:uppercase;
+  animation:blur 3.75s ease-out infinite;
+  text-shadow:0px 0px 5px pink,
+      0px 0px 7px red;
+}
+
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px red,
+      0px 0px 10px red, 
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 25px red,
+      0px 0px 50px red,
+      0px 0px 50px red,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;}
+}
+
+}
